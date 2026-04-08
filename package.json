@@ -1,0 +1,23 @@
+{
+  "name": "vtex-mongo-integration",
+  "version": "2.0.0",
+  "description": "API Gateway enterprise: VTEX e-commerce connector + MongoDB CRUD + Workout REST API",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": ["vtex", "mongodb", "express", "rest-api", "nodejs"],
+  "author": "MaykNLD",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

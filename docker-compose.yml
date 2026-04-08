@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  api:
+    build: .
+    container_name: vtex_mongo_api
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.example
+    depends_on:
+      - mongo
+    restart: unless-stopped
+
+  mongo:
+    image: mongo:5.0
+    container_name: vtex_mongo_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - vtex_mongo_data:/data/db
+    restart: unless-stopped
+
+volumes:
+  vtex_mongo_data:

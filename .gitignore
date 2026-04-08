@@ -1,0 +1,26 @@
+# Archivos de entorno (NUNCA subir al repositorio)
+.env
+*.env
+
+# Dependencias de Node
+node_modules/
+npm-debug.log*
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de secretos y credenciales
+claveSecreta.txt
+logins.txt
+*.pem
+*.key
+
+# Binarios y comprimidos
+*.zip
+*.tgz
+*.exe
+
+# Artefactos de build
+dist/
+build/
